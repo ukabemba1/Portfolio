@@ -1145,6 +1145,80 @@ textarea.w-select {
 .w-dropdown-link:focus {
   outline: 0;
 }
+
+/* Drop Down */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 20px;
+
+  font-family: Inter, sans-serif;
+  color: #223b13;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 16px;
+
+  transition: opacity 200ms ease;
+}
+
+.dropbtn {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 1000px;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #eee;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 6px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 6px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 @media screen and (max-width: 767px) {
   .w-nav-brand {
     padding-left: 10px;
@@ -1723,6 +1797,7 @@ textarea.w-select {
 .w--nav-dropdown-list-open {
   position: static;
 }
+
 @media screen and (max-width: 991px) {
   .w-nav[data-collapse="medium"] .w-nav-menu {
     display: none;
@@ -1840,7 +1915,7 @@ textarea.w-select {
 .insta-reels-container {
   margin-top: 30px;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   column-gap: 20px;
   row-gap: 20px;
   overflow: auto;
