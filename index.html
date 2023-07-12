@@ -72,14 +72,14 @@
             </a>
             <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
               <div class="div-block-2">
-                <li class="dropdown">
+                <!-- <li class="dropdown">
                   <a href="javascript:void(0)" class="dropbtn">Portfolio</a>
                   <div class="dropdown-content">
                     <a href="#youtube">Youtube</a>
                     <a href="#instagram">Instagram</a>
                     <a href="#tiktok">TikTok</a>
                   </div>
-                </li>
+                </li> -->
                 <a
                   href="https://www.instagram.com/luminous_prods"
                   target="_blank"
@@ -228,8 +228,25 @@
     <div class="section wf-section">
       <div class="container w-container">
         <h1 class="title _2">Previous <span class="text-span">Work</span></h1>
+
+        <!-- Portfolio filter -->
+        <div class="row">
+          <div class="portfolio-filter">
+            <span class="filter-item outer-shadow active" data-target="all"
+              >all</span
+            >
+            <span class="filter-item" data-target="Youtube">Youtube</span>
+            <span class="filter-item" data-target="Instagram">Instagram</span>
+            <span class="filter-item" data-target="TikTok">TikTok </span>
+          </div>
+        </div>
+
         <!-- youtube videos -->
-        <div id="youtube" class="w-layout-grid grid">
+        <div
+          id="youtube"
+          class="portfolio-item w-layout-grid grid"
+          data-category="Youtube"
+        >
           <div
             id="w-node-_73253523-b13d-c5f0-fe36-c695bfe6965d-1e30b30b"
             style="padding-top: 56.17021276595745%"
@@ -490,7 +507,11 @@
         </div>
 
         <!-- Insta Reels -->
-        <div id="instagram" class="insta-reels-container">
+        <div
+          id="instagram"
+          class="portfolio-item insta-reels-container"
+          data-category="Instagram"
+        >
           <blockquote
             class="instagram-media"
             data-instgrm-permalink="https://www.instagram.com/reel/ClPCBCljj7d/?utm_source=ig_embed&amp;utm_campaign=loading"
@@ -3599,57 +3620,62 @@
         </div>
 
         <!-- Tiktok  -->
-        <div id="tiktok" class="insta-reels-container"></div>
-        <blockquote
-          class="tiktok-embed"
-          cite="https://www.tiktok.com/@laurenashleybeck/video/7246802369369918762"
-          data-video-id="7246802369369918762"
+        <div
+          id="tiktok"
+          class="portfolio-item tiktok-container"
+          data-category="TikTok"
         >
-          <section></section>
-        </blockquote>
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@laurenashleybeck/video/7246802369369918762"
+            data-video-id="7246802369369918762"
+          >
+            <section></section>
+          </blockquote>
 
-        <blockquote
-          class="tiktok-embed"
-          cite="https://www.tiktok.com/@laurenashleybeck/video/7251598871628041518"
-          data-video-id="7251598871628041518"
-        >
-          <section>
-            Kinda Famous Very Popular Ep. 2 LIVE NEOW on @Spotify + @Apple Music
-            you know where the l!nks are🩷 @Farai Bennett
-          </section>
-        </blockquote>
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@laurenashleybeck/video/7251598871628041518"
+            data-video-id="7251598871628041518"
+          >
+            <section>
+              Kinda Famous Very Popular Ep. 2 LIVE NEOW on @Spotify + @Apple
+              Music you know where the l!nks are🩷 @Farai Bennett
+            </section>
+          </blockquote>
 
-        <blockquote
-          class="tiktok-embed"
-          cite="https://www.tiktok.com/@laurenashleybeck/video/7233036762635865386"
-          data-video-id="7233036762635865386"
-        >
-          <section></section>
-        </blockquote>
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@laurenashleybeck/video/7233036762635865386"
+            data-video-id="7233036762635865386"
+          >
+            <section></section>
+          </blockquote>
 
-        <blockquote
-          class="tiktok-embed"
-          cite="https://www.tiktok.com/@laurenashleybeck/video/7228231652638510378"
-          data-video-id="7228231652638510378"
-        >
-          <section></section>
-        </blockquote>
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@laurenashleybeck/video/7228231652638510378"
+            data-video-id="7228231652638510378"
+          >
+            <section></section>
+          </blockquote>
 
-        <blockquote
-          class="tiktok-embed"
-          cite="https://www.tiktok.com/@freegamep0d/video/7186732792414276907"
-          data-video-id="7186732792414276907"
-        >
-          <section></section>
-        </blockquote>
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@freegamep0d/video/7186732792414276907"
+            data-video-id="7186732792414276907"
+          >
+            <section></section>
+          </blockquote>
 
-        <blockquote
-          class="tiktok-embed"
-          cite="https://www.tiktok.com/@freegamep0d/video/7183575165970828590"
-          data-video-id="7183575165970828590"
-        >
-          <section></section>
-        </blockquote>
+          <blockquote
+            class="tiktok-embed"
+            cite="https://www.tiktok.com/@freegamep0d/video/7183575165970828590"
+            data-video-id="7183575165970828590"
+          >
+            <section></section>
+          </blockquote>
+        </div>
       </div>
     </div>
 
@@ -3901,6 +3927,46 @@
         </div>
       </div>
     </div>
+
+    <!-- ////////// portfolio popup \\\\\\\\\\ -->
+    <div class="pp portfolio-popup">
+      <!--  -->
+      <div class="pp-details">
+        <div class="pp-details-inner">
+          <div class="pp-title">
+            <h2></h2>
+            <p>Category - <span class="pp-project-category"></span></p>
+          </div>
+          <div class="pp-project-details"></div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="pp-main">
+        <div class="pp-main-inner">
+          <div class="pp-project-details-btn outer-shadow hover-in-shadow">
+            Project Details <i class="fas fa-plus"></i>
+          </div>
+          <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
+          <img
+            src="assets/img/portfolio/thumb/webflow.png"
+            alt="img"
+            class="pp-img outer-shadow"
+          />
+          <div class="pp-counter"></div>
+        </div>
+
+        <div class="pp-loader">
+          <div></div>
+        </div>
+
+        <!-- pp navigation -->
+        <div class="pp-prev"><i class="fas fa-play"></i></div>
+        <div class="pp-next"><i class="fas fa-play"></i></div>
+      </div>
+    </div>
+
     <script
       src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=633d4c4ab631306fea30b30c"
       type="text/javascript"
